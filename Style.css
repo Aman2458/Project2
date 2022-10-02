@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+
+}
+
+#main {
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+}
+
+#left {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+    width: 50%;
+    background-color: lightpink;
+
+
+}
+
+#text1 h2 {
+    position: absolute;
+    font-family: Glitten;
+    line-height: 40px;
+    top: 14%;
+    left: 10%;
+    font-size: 50px;
+    z-index: 999;
+    font-weight: 400;
+    animation: text 2s cubic-bezier(0.19, 1, 0.22, 1) 2s infinite;
+}
+
+#text1 h6 {
+    position: absolute;
+    font-family: voyage;
+    font-weight: 300;
+    top: 10%;
+    left: 10%;
+    font-size: 15px;
+    animation: text 2s cubic-bezier(0.19, 1, 0.22, 1) 2s infinite;
+
+}
+
+.center {
+
+    align-items: center;
+    justify-content: center;
+    height: 40%;
+    width: 30%;
+    /* background-color:darkred; */
+}
+
+#llorem {
+    position: absolute;
+    top: 70%;
+    font-size: 10px;
+    line-height: 9px;
+    font-family: Gilroy;
+    animation: anim4 2s cubic-bezier(0.19, 1, 0.22, 1) 2s infinite;
+}
+
+#o73 {
+    position: absolute;
+    top: 55%;
+    left: 28%;
+    font-size: 200px;
+    font-family: Garamond;
+    font-weight: 300;
+    animation: text2 2s cubic-bezier(0.19, 1, 0.22, 1) 2s infinite;
+}
+
+.photu {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    /* background-color: yellow; */
+    background-image: url(https://images.unsplash.com/photo-1611042553365-9b101441c135?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bW9kZWwlMjBnaXJsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    background-position: center;
+    background-size: cover;
+}
+#box1{
+    position: absolute;
+    top: 93.5%;
+    left: .5px;
+    height: 40px ;
+    width: 100px;
+    background-color: rgb(231, 123, 168);
+}
+
+#box1 h6{
+    position: relative;
+    padding: 15px 30px;
+    color: #fff;
+    font-weight: 100;
+    font-family: voyage;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+#box1:hover h6{
+    background-color: silver;
+    color: darkred;
+}
+
+#right {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+    width: 50%;
+    background-color: rgb(241, 209, 228);
+}
+
+#llorem1 {
+    position: absolute;
+    top: 21%;
+    left: 70%;
+    font-size: 10px;
+    line-height: 9px;
+    font-family: Gilroy;
+    animation: anim3 2s cubic-bezier(0.19, 1, 0.22, 1) 2s infinite;
+}
+
+.photu1 {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    /* background-color: yellow; */
+    background-image: url(https://images.unsplash.com/photo-1623039497055-e79fcaebd4ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bW9kZWwlMjBnaXJsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    background-position: center;
+    background-size: cover;
+}
+
+#text2 h1 {
+    position: absolute;
+    top: 10%;
+    left: 55%;
+    font-family: French Script MT;
+    font-weight: 100;
+    font-size: 50px;
+    line-height: 30px;
+    animation: anim2 2s cubic-bezier(0.19, 1, 0.22, 1) 2s infinite;
+
+
+
+}
+
+#lanim {
+    animation: anim 2s cubic-bezier(0.19, 1, 0.22, 1) 1s infinite;
+    /* background-color: darkred; */
+    background-image: url(https://images.unsplash.com/photo-1576828831022-ca41d3905fb7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bW9kZWwlMjBnaXJsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    background-position: center;
+    background-size: cover;
+}
+
+#ranim {
+    animation: anim 2s cubic-bezier(0.19, 1, 0.22, 1) 10s infinite reverse;
+    /* background-color: darkred; */
+    background-image: url(https://images.unsplash.com/photo-1611601679655-7c8bc197f0c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bW9kZWwlMjBnaXJsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.elem {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+
+}
+
+@keyframes anim {
+    0% {
+        top: 100%;
+        bottom: 100%;
+    }
+
+    50% {
+        top: 0%;
+        bottom: 100%;
+    }
+
+    100% {
+        top: 0%;
+        bottom: 0%;
+    }
+}
+
+@keyframes text {
+    0% {
+        left: 20%;
+        right: 0%;
+    }
+
+    100% {
+        left: 10%;
+        right: 0%;
+    }
+}
+
+@keyframes text2 {
+    0% {
+        left: 40%;
+        right: 0%;
+    }
+
+    100% {
+        left: 30%;
+        right: 0%;
+    }
+}
+
+@keyframes anim1 {
+    0% {
+        top: 100%;
+        bottom: 100%;
+    }
+
+    50% {
+        top: 0%;
+        bottom: 100%;
+    }
+
+    100% {
+        top: 0%;
+        bottom: 0%;
+    }
+}
+
+@keyframes anim2 {
+    0% {
+        left: 50%;
+        right: 10%;
+    }
+
+    100% {
+        left: 60%;
+        right: 10%;
+    }
+}
+
+@keyframes anim3 {
+    0% {
+        left: 60%;
+        right: 0%;
+    }
+
+    100%{
+        right: 0%;
+        left: 72%;
+    }
+}
+
+@keyframes anim4 {
+    0% {
+        right: 30%;
+        left: 40%;
+    }
+
+    100% {
+        right: 0%;
+        left: 16.5%;
+    }
+}
+
+#right h5 {
+    position: absolute;
+    left: 60%;
+    font-size: 25px;
+    font-family: Garamond;
+    animation: anim2 2s cubic-bezier(0.19, 1, 0.22, 1) 2s infinite;
+
+}
+.element{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+}
+@keyframes main{
+    0% {
+       
+        top: 100%;
+        bottom: 100%;
+    }
+   50% {
+        top: 0%;
+        bottom: 100%;
+    }
+
+    100% {
+        top: 0%;
+        bottom: 0%;
+    }
+}
+
+#lani{
+
+    animation-name: main;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    animation-delay: 5s;
+    background-color: violet;
+    /* animation-direction: reverse; */
+    animation-iteration-count: infinite;
+   
+}
+ #mrani{
+    animation-name: main;
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    animation-delay: 2s;
+    background-color: burlywood;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+        
+ }
+ #text3 h3{
+    position: absolute;
+    left: 85%;
+    top: 80%;
+    font-size: 40px;
+    font-family: voyage;
+    transform: rotate(90deg);
+ }
+
+ #icon{
+    position: absolute;
+    height: 40px ;
+    width: 40px;
+    background-color:  rgb(233, 177, 104);
+    top: 5%;
+    left: 95%;
+    cursor: pointer;
+    
+ }
+ #icon i{
+    position: absolute;
+    margin: 12px 12px ;
+    color: navajowhite;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+ }
+
+ #text4{
+    position: absolute;
+    top: 7%;
+    left: 90%;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-style: italic;
+    font-family: glitten;
+    letter-spacing: 2px ;
+ }
+ #icon:hover i{
+    background-color: palevioletred;
+    cursor: pointer;
+    color: crimson;
+
+ }
+ #navbar{
+    height: 100%;
+    width: 5%;
+    top:0%;
+    left: 94%;
+    /* border: 1px solid #000; */
+    position: absolute;
+ }
+ #navbar h6{
+    position: relative;  
+    text-transform: capitalize;
+    top: 15%;
+    left: 5%;
+    font-family: voyage;
+    transform-origin: (90deg);
+    transform: rotate(90deg);
+    padding: 30px;
+    font-weight: 100;
+ }
+ #navbar i{
+    position: relative;
+    top: 20%;
+    left: 5%;
+    padding: 25px;
+ }
+ i:hover{
+    color: #fff;
+    cursor: pointer;
+ }
+ h6:hover{
+      color: #fff;
+      cursor: pointer;
+ }
+
